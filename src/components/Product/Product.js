@@ -11,7 +11,7 @@ module.exports = React.createClass({
         return (
             <div>
                 <img src={product.image} />
-                <p>{product.name}</p>
+                <a href={product.link}>{product.name}</a>
             </div>
         );
     }

@@ -1,4 +1,6 @@
-var React = require('react');
+const React = require('react');
+const Product = require('./components/Product/Product');
+const data = require('./api/products')();
 
 const ReactApp = React.createClass({
 
@@ -7,8 +9,12 @@ const ReactApp = React.createClass({
     },
 
     render() {
+        const products = data.map(function(product) {
+            return <Product product={product} />;
+        });
+
         return (
-            <h1>lalala</h1>
+            <div>{products}</div>
         );
     }
 });

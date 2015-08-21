@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "browserify ./src/public/main.js -t babelify -t reactify -o ./src/public/bundle.js",
-    "start": "nodemon ./src/server.js"
+    "watch": "watchify ./src/public/main.js -dv -t babelify -t reactify -o ./src/public/bundle.js",
+    "server": "nodemon ./src/server.js"
   },
   "author": "Arnaud Benard <arnaud@streethub.com>",
   "license": "ISC",

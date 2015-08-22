@@ -2,16 +2,12 @@ const React = require('react');
 
 module.exports = React.createClass({
 
-    componentDidMount() {
-        console.log('mount product');
-    },
-
     render() {
         const product = this.props.product;
         return (
-            <div className="Product">
+            <div className='col col-3 Product'>
                 <img src={product.image} />
-                <a href={product.link}>{product.name}</a>
+                <a href={product.link} className='regular'>{product.name}</a>
             </div>
         );
     }

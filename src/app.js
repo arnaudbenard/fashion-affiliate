@@ -1,5 +1,6 @@
 const React = require('react');
 const Product = require('./components/Product/Product');
+const Header = require('./components/Header/Header');
 const data = require('./api/products')();
 
 const ReactApp = React.createClass({
@@ -14,7 +15,14 @@ const ReactApp = React.createClass({
         });
 
         return (
-            <div>{products}</div>
+            <div>
+                <Header />
+                <div className="container">
+                  <div className="clearfix">
+                    {products}
+                  </div>
+                </div>
+            </div>
         );
     }
 });

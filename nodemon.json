@@ -1,5 +1,6 @@
 {
-  "execMap": {
-    "js": "node"
-  }
+    "ignore": ["src/public/*"],
+    "execMap": {
+        "js": "node"
+    }
 }

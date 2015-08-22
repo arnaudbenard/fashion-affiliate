@@ -9,7 +9,7 @@ module.exports = React.createClass({
     render() {
         const product = this.props.product;
         return (
-            <div>
+            <div className="Product">
                 <img src={product.image} />
                 <a href={product.link}>{product.name}</a>
             </div>

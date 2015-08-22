@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "browserify ./src/public/main.js -t babelify -t reactify -o ./src/public/bundle.js",
     "watch": "watchify ./src/public/main.js -dv -t babelify -t reactify -o ./src/public/bundle.js",
-    "server": "nodemon ./src/server.js"
+    "server": "nodemon ./src/server.js",
+    "start": "nf start"
   },
   "author": "Arnaud Benard <arnaud@streethub.com>",
   "license": "ISC",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "babelify": "^6.2.0",
     "browserify": "^11.0.1",
+    "foreman": "^1.4.1",
     "nodemon": "^1.4.1",
     "reactify": "^1.1.1",
     "watchify": "^3.3.1"
